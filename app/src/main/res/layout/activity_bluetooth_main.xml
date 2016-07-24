@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context=".MainBluetoothActivity"
+    android:background="@drawable/blueback2">
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Host\nGame"
+    android:padding="15dp"
+    android:id="@+id/b1"
+    android:onClick="choose"
+    android:typeface="serif"
+    android:background="@drawable/buttonback"
+    android:textColor="#ffffff"/>
+
+    <Button
+        android:padding="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b2"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:typeface="serif"
+        android:text="Connect\nto   Host"
+        android:onClick="connecttohost"
+        android:background="@drawable/buttonback"
+        android:textColor="#ffffff"
+        />
+
+    <FrameLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fl1"
+        android:layout_below="@id/b1"
+        android:layout_marginBottom="50dp"
+        android:background="#b2afaf"
+        >
+
+    </FrameLayout>
+</RelativeLayout>
